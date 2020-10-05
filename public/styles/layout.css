@@ -5,21 +5,29 @@
  */
 html {
   box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
 /*
- * Global layout stuff
- */
+* Global layout stuff
+*/
 
 body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ #container {
+   text-align: center;
+   font-family: 'Source Sans Pro', sans-serif;
+
+ }

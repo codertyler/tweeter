@@ -1,0 +1,16 @@
+nav {
+  height: 120px;
+  background-color: #4056A1;
+  color: #ffffff;
+  padding: 1.5em;
+  border: 0px;
+}
+
+@viewport {
+  width: 100vw;
+}
+
+nav > span {
+  font-family: 'Bungee', cursive, sans-serif;
+  font-size: 30px;
+}
