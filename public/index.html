@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
 
     <!-- External JS -->
@@ -20,12 +21,13 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <nav>
-      <span>tweeter</span>
+    <nav class="nav-container">
+      <span class="logo-text"><h3>tweeter</h3></span>
     </nav>
     <header>
       <div>
@@ -38,7 +40,17 @@
   </header>
 
     <!-- Page-specific (main) content here -->
-    <main class="container"></main>
-    <p>tweeeter twat</p>
+    <main class="container">
+      <section class="new-tweet">
+        <form action="/tweets" method="POST" >
+          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+          <div class="tweet-text-bottom">
+            <button type="submit" class="tweet-btn">Tweet</button>
+            <output name="counter" class="counter" id="char-count" for="tweet-text"></output>
+          </div>
+        </form>
+      </section>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, nemo, cum voluptate possimus, rem error corrupti omnis nisi velit pariatur itaque quisquam nulla natus veniam ea quos porro. Fuga voluptatum odio quia reprehenderit ipsa totam provident, unde perferendis corporis nulla.</p>
+    </main>
   </body>
 </html>

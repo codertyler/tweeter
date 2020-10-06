@@ -1,0 +1,37 @@
+.tweet-text-bottom {
+  display: flex;
+  font-family: 'Bungee', cursive, sans-serif;
+  margin: 30px 0px;
+  justify-content: space-between;
+}
+
+.tweet-btn {
+  background-color: #4056A1;
+  color: #ffffff;
+  border: none;
+  display: inline-flex;
+}
+
+.counter {
+  display: inline-flex;
+}
+
+
+.new-tweet {
+  width: 100%;
+  padding-top: 50px;
+
+}
+
+#tweet-text {
+  background: transparent;
+  width: 100%;
+  padding: 0;
+  resize: none;
+  border: none;
+  overflow: auto;
+  outline: none;
+  border-bottom:3px solid black;
+  line-height: normal;
+  vertical-align: bottom;
+}

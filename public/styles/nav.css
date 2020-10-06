@@ -1,16 +1,22 @@
-nav {
+.nav-container {
   height: 120px;
-  background-color: #4056A1;
+  background-color: #007ec2;
+  background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
   color: #ffffff;
-  padding: 1.5em;
   border: 0px;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  vertical-align: middle;
 }
 
 @viewport {
   width: 100vw;
 }
 
-nav > span {
+.logo-text > h3 {
   font-family: 'Bungee', cursive, sans-serif;
-  font-size: 30px;
+  vertical-align: middle;
+  justify-content: center;
+  margin: 1.5em;
 }
