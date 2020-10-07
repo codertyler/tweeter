@@ -1,4 +1,4 @@
-header {
+#nav-header {
   height: 400px;
   width: 100%;
   text-align: center;
@@ -6,9 +6,6 @@ header {
   background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
   color: #ffffff;
   font-family: 'Bungee', cursive, sans-serif;
-
+  margin-top: 120px;
 }
 
-#header_img {
-  padding-top: 30px;
-}

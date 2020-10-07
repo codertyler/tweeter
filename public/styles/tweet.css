@@ -1,0 +1,65 @@
+.tweet {
+  border: 3px solid black;
+  color: rgb(114, 99, 99);
+}
+
+.tweet header {
+  font-size: 0.7em;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1em;
+}
+
+.tweet label {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: rgb(112, 112, 230);
+}
+
+.tweet label:hover {
+  color: rgb(74, 74, 221);
+}
+
+#at_name {
+  color: transparent; 
+}
+
+.tweet:hover #at_name {
+  color: rgb(74, 74, 221);
+}
+
+.tweet img {
+  margin-right: 20px;
+  opacity: 0.5;
+}
+
+.tweet .tweet .img:hover {
+  opacity: 1;
+}
+
+.tweet h4 {
+  padding: 1em 0 1em 0;
+  margin: 0 20px 0 20px;
+}
+
+.tweet hr {
+  color: black;
+  background-color: black;
+  height: 3px;
+  margin: 0 10px 0 10px;
+}
+
+.tweet footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  margin: 0 10px 0 10px;
+}
+
+.tweet:hover {
+  box-shadow: 5px 10px;
+  color: black;
+}

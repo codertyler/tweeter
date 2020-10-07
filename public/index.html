@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
-  <head>
 
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
@@ -14,7 +13,7 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
-
+    <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -29,7 +28,7 @@
     <nav class="nav-container">
       <span class="logo-text"><h3>tweeter</h3></span>
     </nav>
-    <header>
+    <header id="nav-header">
       <div>
           <img id="header_img" src="/images/profile-hex.png"> 
       </div>
@@ -50,7 +49,26 @@
           </div>
         </form>
       </section>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, nemo, cum voluptate possimus, rem error corrupti omnis nisi velit pariatur itaque quisquam nulla natus veniam ea quos porro. Fuga voluptatum odio quia reprehenderit ipsa totam provident, unde perferendis corporis nulla.</p>
+      
+      <section class="tweet">
+        <article>
+          <header>
+            <label for="img"><img src="https://i.imgur.com/73hZDYK.png" alt="avatar">
+              Newton</label>
+             <h3 id="at_name">@User</h3>
+          </header>
+          <h4>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta recusandae aspernatur, incidunt, voluptates ipsam consectetur, amet vel quos odio ut aliquid totam. Nesciunt cumque praesentium itaque corporis molestiae aliquid ut quae dolorum placeat animi enim at sint aspernatur, blanditiis molestias debitis veritatis recusandae. Inventore unde officiis delectus molestiae aspernatur ut porro, voluptas quibusdam, animi consequatur quis ea provident, repellendus magnam ducimus optio harum in tempore quaerat deserunt earum. Ad architecto quia, ipsa cum et quam ea numquam quod cupiditate aliquam officiis, similique, veritatis est totam non maxime nisi molestiae odit illo at. Inventore repellat assumenda accusamus rem minima aliquam unde omnis minus exercitationem recusandae voluptatibus sit, a repellendus sed cum, expedita nemo dolorum. Aliquid, ea distinctio facere eligendi itaque eum!
+          </h4>
+          
+          <hr>
+          <footer>
+            <p>Posted 1 Day ago</p>
+            <p>logos</p>
+          </footer>
+        </article>
+      </section>
+
     </main>
   </body>
 </html>

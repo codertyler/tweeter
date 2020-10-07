@@ -1,4 +1,4 @@
-.nav-container {
+nav {
   height: 120px;
   background-color: #007ec2;
   background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
@@ -8,13 +8,16 @@
   align-items: stretch;
   justify-content: flex-start;
   vertical-align: middle;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 @viewport {
   width: 100vw;
 }
 
-.logo-text > h3 {
+.logo-text {
   font-family: 'Bungee', cursive, sans-serif;
   vertical-align: middle;
   justify-content: center;
