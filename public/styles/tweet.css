@@ -1,6 +1,7 @@
-.tweet {
+.tweet article {
   border: 3px solid black;
   color: rgb(114, 99, 99);
+  opacity: 0.5;
 }
 
 .tweet header {
@@ -19,26 +20,18 @@
   color: rgb(112, 112, 230);
 }
 
-.tweet label:hover {
-  color: rgb(74, 74, 221);
-}
-
 #at_name {
   color: transparent; 
 }
 
-.tweet:hover #at_name {
-  color: rgb(74, 74, 221);
+.tweet article:hover #at_name {
+  color: rgb(154, 154, 240);
 }
 
 .tweet img {
   margin-right: 20px;
-  opacity: 0.5;
 }
 
-.tweet .tweet .img:hover {
-  opacity: 1;
-}
 
 .tweet h4 {
   padding: 1em 0 1em 0;
@@ -59,7 +52,8 @@
   margin: 0 10px 0 10px;
 }
 
-.tweet:hover {
+.tweet article:hover {
   box-shadow: 5px 10px;
   color: black;
+  opacity: 1;
 }
