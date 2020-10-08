@@ -35,3 +35,19 @@
   line-height: normal;
   vertical-align: bottom;
 }
+
+.errorMsg {
+  border: red 4px solid;
+  color: red;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.errorMsg p {
+  margin: 0;
+  padding: 0;
+}
