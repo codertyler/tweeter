@@ -6,7 +6,7 @@ const renderTweets = function (tweets) {
   for (let tweet of tweets) {
     // calls createTweetElement for each tweet
     let myTweet = createTweetElement(tweet);
-    $(".tweet").append(myTweet);
+    $(".tweet").prepend(myTweet);
   }
 
   // takes return value and appends it to the tweets container
@@ -26,7 +26,7 @@ const createTweetElement = (obj) => {
     
     <hr>
     <footer>
-    <p>${Date(obj.created_at).toString()}</p>
+    <p>${moment(obj.created_at).fromNow()}</p>
     <p>logos</p>
     </footer>
     </article>
@@ -45,9 +45,16 @@ const loadTweets = () => {
 const loadRecentTweet = () => {
   $.ajax('/tweets', {method: 'GET'})
     .then((data) => {
-      const newTweet = createTweetElement(data[data - 1]);
-    $('#tweets').append(newTweet)
+      const newTweet = createTweetElement(data[data.length - 1]);
+    $('.tweet').prepend(newTweet)
     })
+};
+
+//XSS handler
+const escape =  function(str) {
+  let div = document.createElement('div');
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
 };
 
 //The first line below ensures that script loads only after other hmtl is loaded on the page
@@ -74,10 +81,10 @@ $(document).ready(() => {
       $("#errorMsg").html(errorMsg).slideDown();
     } else {
 //Handling the submitted text and posting it to the server
+
       $.ajax({
         url: "/tweets",
         method: "POST",
-//Handling the risk of CORS
         data: { text: escape(theText) },
       }).then(() => {
         loadRecentTweet();
