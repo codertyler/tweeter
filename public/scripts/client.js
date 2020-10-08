@@ -4,45 +4,45 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-$(document).ready( () => {
-  
+ 'use strict';
+
+$(document).ready(() => {
   const data = [
     {
-      "user": {
-        "name": "Newton",
-        "avatars": "https://i.imgur.com/73hZDYK.png"
-        ,
-        "handle": "@SirIsaac"
+      user: {
+        name: "Newton",
+        avatars: "https://i.imgur.com/73hZDYK.png",
+        handle: "@SirIsaac",
       },
-      "content": {
-        "text": "If I have seen further it is by standing on the shoulders of giants"
+      content: {
+        text:
+          "If I have seen further it is by standing on the shoulders of giants",
       },
-      "created_at": 1461116232227
+      created_at: 1461116232227,
     },
     {
-      "user": {
-        "name": "Descartes",
-        "avatars": "https://i.imgur.com/nlhLi3I.png",
-        "handle": "@rd" },
-      "content": {
-        "text": "Je pense , donc je suis"
+      user: {
+        name: "Descartes",
+        avatars: "https://i.imgur.com/nlhLi3I.png",
+        handle: "@rd",
       },
-      "created_at": 1461113959088
-    }
-  ]
+      content: {
+        text: "Je pense , donc je suis",
+      },
+      created_at: 1461113959088,
+    },
+  ];
 
-  const renderTweets = function(tweets) {
+  const renderTweets = function (tweets) {
     // loops through tweets
-    for(let tweet of tweets) {
+    for (let tweet of tweets) {
       // calls createTweetElement for each tweet
       let myTweet = createTweetElement(tweet);
-      $('.tweet').append(myTweet); 
-    
+      $(".tweet").append(myTweet);
     }
-    
-    // takes return value and appends it to the tweets container
 
-  }
+    // takes return value and appends it to the tweets container
+  };
 
   const createTweetElement = (obj) => {
     let $tweet = `<article> 
@@ -62,11 +62,32 @@ $(document).ready( () => {
              </footer>
            </article>
       </article><br>`;
-      return $tweet;
-      
-    };
+    return $tweet;
+  };
 
-    
-    renderTweets(data);
+
+
+  renderTweets(data);
+  let theTweet = ($('#tweet-text').val().serialize());
+
+  $(function() {
+    $(".tweet-btn").on('click', function () {
+      console.log('Button is clicked requesting ajax POST');
+      $.ajax('/tweets', { method: 'POST' , theTweet})
+      .then(function (){
+        console.log("sent")
+      })
+      .fail((err) => {
+        console.log("failed with error: ", err);
+      })
+    })
+  }) 
+
+  $("#submit_post").submit((event)=>{
+    event.preventDefault();
+  });
+
+
+
 
 });
