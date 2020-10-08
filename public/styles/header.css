@@ -2,11 +2,53 @@
   height: 400px;
   width: 100%;
   text-align: center;
-  background-color: #007ec2;
-  background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
-  color: #ffffff;
-  font-family: 'Bungee', cursive, sans-serif;
-  margin-top: 120px;
+  /* background-color: #007ec2; */
+  /* background-image: url("https://www.transparenttextures.com/patterns/black-linen.png"); */
+  color: black;
+  font-style: sans-serif;
+  margin: 8em 0 0 2em;
+}
+#header_img {
+  height: 200px;
+  padding-right: 120px;
+}
 
+.one {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  margin-top: 8em;
+  width: 100em;
+}
+
+
+@media only screen and (max-width: 768px) {
+  #nav-header {
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    background-color: #007ec2;
+    background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+    color: white;
+    font-style: sans-serif;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-top: 120px;
+  }
+
+  .one {
+    display: block;
+    justify-items: center;
+  }
+
+  .container {
+    width: 90%;
+    margin-top: 0;
+    
+  }
+  
 }
 

@@ -1,5 +1,6 @@
 //This file takes care of client tweets and renders to the main page
 
+
 //This function renders creted tweets from a fucntion createTweetElement
 const renderTweets = function (tweets) {
   // loops through tweets
@@ -27,7 +28,7 @@ const createTweetElement = (obj) => {
     <hr>
     <footer>
     <p>${moment(obj.created_at).fromNow()}</p>
-    <p>logos</p>
+    <a id="retweet" href="#">retweet</a>
     </footer>
     </article>
     </article><br>`;
@@ -71,7 +72,7 @@ $(document).ready(() => {
     const theText = $("#tweet-text").val();
 
     //Tweet validation functions
-    if (theText.length === 0) {
+    if (!theText || theText.trim() === "") {
       const errorMsg = `<p>Empty tweet is not accepted!</p>`;
       $("#errorMsg").addClass("errorMsg");
       $("#errorMsg").html(errorMsg).slideDown();

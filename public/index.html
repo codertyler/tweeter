@@ -28,36 +28,44 @@
     <!-- Top nav bar (fixed) -->
     <nav class="nav-container">
       <span class="logo-text"><h3>tweeter</h3></span>
+      <h3>Tweet something!</h3>
     </nav>
-    <header id="nav-header">
-      <div>
-          <img id="header_img" src="/images/profile-hex.png"> 
-      </div>
-      <br>
-      <div>
-          <h2>Your Name</h2>
-      </div>
-  </header>
 
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <section class="new-tweet">
-        <div id="errorMsg">
-          <!-- Error messages appear and unappear here -->
-        </div>
-        <form action="/tweets" method="POST" id="submit_post">
-          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
-          <div class="tweet-text-bottom">
-            <button type="submit" class="tweet-btn">Tweet</button>
-            <output name="counter" class="counter" id="char-count" for="tweet-text"></output>
-          </div>
-        </form>
-      </section>
+    <!--This the container for desktop design-->
+    <div class="one">
       
-      <section class="tweet">
-        <!-- Data from clinet JS-->
-      </section>
+      <header id="nav-header">
+        <div>
+            <img id="header_img" src="/images/peter.gif"> 
+        </div>
+        <div>
+            <h2>Tyler Asai</h2> 
+        </div>
+    </header>
+  
+      <!-- Page-specific (main) content here -->
+      <main class="container">
+        <section class="new-tweet">
+          <div id="errorMsg">
+            <!-- Error messages appear and unappear here -->
+          </div>
+          <form action="/tweets" method="POST" id="submit_post">
+            <textarea name="text" id="tweet-text" placeholder="What are you birding about?"></textarea>
+            <div class="tweet-text-bottom">
+              <button type="submit" class="tweet-btn">Tweet</button>
+              <output name="counter" class="counter" id="char-count" for="tweet-text"></output>
+            </div>
+          </form>
+        </section>
+        
+        <section class="tweet">
+          <!-- Data from clinet JS-->
+        </section>
+  
+      </main>
 
-    </main>
+    </div>
+    
+    
   </body>
 </html>
