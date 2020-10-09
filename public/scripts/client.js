@@ -29,7 +29,11 @@ const createTweetElement = (obj) => {
     <hr>
     <footer>
     <p>${moment(obj.created_at).fromNow()}</p>
-    <a id="retweet" href="#">retweet</a>
+    <div id="threeButtons" href="#">
+    <img src="/images/flag.png">
+    <img src="/images/retweet.png">
+    <img src="/images/like.png">
+    </div>
     </footer>
     </article>
     </article><br>`;

@@ -12,6 +12,18 @@
   display: inline-flex;
 }
 
+
+#threeButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#threeButtons img {
+  height: 20px;
+
+}
+
 .counter {
   display: inline-flex;
 }
