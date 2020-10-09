@@ -1,8 +1,13 @@
 # Tweeter Project
 
-Tweeter is a simple, single-page Twitter clone.
+Tweeter is a simple, single-page Twitter clone. But is better! It is Family Guy themed with Peter dancing as a user!
 
 This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.
+
+##Screenshots
+
+![Test Image 1](https://github.com/codertyler/tweeter/blob/master/public/images/screenshots/desktop_tweeter.png)
+![Test Image 1](https://github.com/codertyler/tweeter/blob/master/public/images/screenshots/tablet_tweeter.png)
 
 ## Getting Started
 
@@ -15,3 +20,4 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+- Moment (for time stamp)
