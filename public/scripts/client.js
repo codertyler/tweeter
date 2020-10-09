@@ -1,6 +1,4 @@
-
 //This file takes care of client tweets and renders to the main page
-
 
 //This function renders creted tweets from a fucntion createTweetElement
 const renderTweets = function (tweets) {
@@ -49,16 +47,15 @@ const loadTweets = () => {
 
 //Loading the recent tweet
 const loadRecentTweet = () => {
-  $.ajax('/tweets', {method: 'GET'})
-    .then((data) => {
-      const newTweet = createTweetElement(data[data.length - 1]);
-    $('.tweet').prepend(newTweet)
-    })
+  $.ajax("/tweets", { method: "GET" }).then((data) => {
+    const newTweet = createTweetElement(data[data.length - 1]);
+    $(".tweet").prepend(newTweet);
+  });
 };
 
 //XSS handler
-const escape =  function(str) {
-  let div = document.createElement('div');
+const escape = function (str) {
+  let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 };
@@ -86,7 +83,7 @@ $(document).ready(() => {
       $("#errorMsg").addClass("errorMsg");
       $("#errorMsg").html(errorMsg).slideDown();
     } else {
-//Handling the submitted text and posting it to the server
+      //Handling the submitted text and posting it to the server
 
       $.ajax({
         url: "/tweets",
@@ -99,10 +96,9 @@ $(document).ready(() => {
 
       //Removing error message after entering valid tweet
 
-      $('#tweet-text').val("");
-      $('#errorMsg').removeClass('errorMsg')
-      $('#errorMsg').text("");
-
+      $("#tweet-text").val("");
+      $("#errorMsg").removeClass("errorMsg");
+      $("#errorMsg").text("");
     }
   });
 });

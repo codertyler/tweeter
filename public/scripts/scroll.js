@@ -2,8 +2,6 @@
 
 $(document).ready(() => {
   $("#compose").click(() => {
-   
-      document.querySelector('#tweet-text').focus();
-    
-})
-})
+    document.querySelector("#tweet-text").focus();
+  });
+});

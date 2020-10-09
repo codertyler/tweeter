@@ -1,6 +1,6 @@
 $(document).ready(() => {
   const maxNum = 140;
-  const charCount = $("#char-count"); 
+  const charCount = $("#char-count");
   charCount.text(maxNum);
 
   $("#tweet-text").on("keyup", function () {

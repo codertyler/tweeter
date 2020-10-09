@@ -45,8 +45,7 @@ nav {
   text-align: center;
   cursor: pointer;
   margin-right: 20px;
-  padding-top: 20px
-
+  padding-top: 20px;
 }
 
 #tweet-something {
@@ -56,12 +55,13 @@ nav {
 /*animating the arrow*/
 
 @-webkit-keyframes arrow-jump {
-  0%   { opacity: -1;}
-  100% { opacity: 1; 
-        -webkit-transform: translateY(15px);
- 
-    }
-  
+  0% {
+    opacity: -1;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(15px);
+  }
 }
 #arrow {
   -webkit-animation: arrow-jump 1s infinite;
