@@ -20,6 +20,7 @@
 
 #threeButtons img {
   height: 20px;
+  cursor: pointer;
 }
 
 .counter {
